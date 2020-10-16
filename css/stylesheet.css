@@ -9,10 +9,10 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #12397c;
+  background-color: #0b2046;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 .list-md {
   background-color: #12397c;
