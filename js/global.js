@@ -5,11 +5,9 @@ function toggleMenu() {
   if (menuOpen == true) {
     closeNav();
     menuOpen = false;
-    console.log('Close menu'); //Test ------------
   } else {
     openNav();
     menuOpen = true;
-    console.log('Open menu'); //Test ------------
   }
 }
 function openNav() {
@@ -23,7 +21,6 @@ function closeNav() {
 //Image modal display
 
 function openModal(img, pageModal, modalImg) {
-  console.log('Open image modal'); //Test ------------
   pageModal.style.display = 'block';
   modalImg.src = img.src;
   caption.innerHTML = img.alt;
