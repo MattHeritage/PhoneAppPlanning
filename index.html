@@ -95,20 +95,55 @@
 
         <!-- screen begin here -->
       </ion-header>
-      <ion-content>
-        <img
-          src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
-          alt="Tree at sunset"
-          style="width: 100%; max-width: 300px"
-          onclick="getModalElems(this)"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2016/10/18/21/22/california-1751455__340.jpg"
-          alt="California beach"
-          style="width: 100%; max-width: 300px"
-          onclick="getModalElems(this)"
-        />
-        <p>Hello!</p>
+      <ion-content class="ion-padding">
+        <!-- Img grid -->
+        <ion-item class="ion-no-padding">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <br />
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+                  alt="Tree at sunset"
+                  style="width: 100%; max-width: 150px; justify-content: center"
+                  onclick="getModalElems(this)"
+                />
+              </ion-col>
+              <ion-col>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <!-- Img grid end -->
+        <!-- Img grid -->
+        <ion-item class="ion-no-padding">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <br />
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/10/18/21/22/california-1751455__340.jpg"
+                  alt="California beach"
+                  style="width: 100%; max-width: 300px"
+                  onclick="getModalElems(this)"
+                />
+              </ion-col>
+              <ion-col>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <!-- Img grid end -->
+
+        <!-- content here-->
       </ion-content>
       <!-- Floating button-->
       <ion-fab vertical="bottom" horizontal="end" slot="fixed">
