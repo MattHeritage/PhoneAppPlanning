@@ -66,7 +66,7 @@
         <!--Side nav bar-->
         <div id="sideNav" class="sidenav">
           <ion-list color="primary">
-            <ion-item href="index.html" color="secondary">
+            <ion-item href="#" color="secondary">
               <ion-label>Home</ion-label>
               <ion-icon name="arrow-forward"></ion-icon>
             </ion-item>
@@ -96,36 +96,37 @@
         <!-- screen begin here -->
       </ion-header>
       <ion-content class="ion-padding">
-        <!-- Img grid -->
-        <ion-item class="ion-no-padding">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="4">
-                <br />
-                <img
-                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
-                  alt="Tree at sunset"
-                  style="width: 100%; max-width: 150px; justify-content: center"
-                  onclick="getModalElems(this)"
-                />
-              </ion-col>
-              <ion-col>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
-        <!-- Img grid end -->
         <!-- content begin here-->
+        <ion-grid class="ion-text-center">
+          <ion-row>
+            <ion-col style="font-size: 20px">
+              <b> Save it: Item finder </b>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><b> Mobile computing </b></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col> Matthew Heritage </ion-col>
 
+            <ion-col> </ion-col>
+            <!-- -------------------------------------------->
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button
+                color="dark"
+                href="https://github.com/MattHeritage/PhoneAppPlanning"
+                >Github<ion-icon slot="start" name="logo-github"></ion-icon
+              ></ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
         <!-- content end here-->
       </ion-content>
       <!-- Floating button-->
       <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button href="#">
+        <ion-fab-button href="goals.html">
           <ion-icon name="chevron-forward-outline"></ion-icon>
         </ion-fab-button>
       </ion-fab>
