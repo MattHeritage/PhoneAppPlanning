@@ -28,3 +28,13 @@ function openModal(img, pageModal, modalImg) {
 function closeModal(modal) {
   modal.style.display = 'none';
 }
+
+//Toggle dropdown
+function ToggleList(list) {
+  //list = document.getElementById(list);
+  if (list.style.display == 'none') {
+    list.style.display = 'block';
+  } else {
+    list.style.display = 'none';
+  }
+}

@@ -97,32 +97,62 @@
         <!-- screen begin here -->
       </ion-header>
       <ion-content class="ion-padding">
-        <!-- Img grid -->
-        <ion-item class="ion-no-padding">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="4">
-                <br />
-                <img
-                  class="img-shadow"
-                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
-                  alt="Tree at sunset"
-                  style="width: 100%; max-width: 150px; justify-content: center"
-                  onclick="getModalElems(this)"
-                />
-              </ion-col>
-              <ion-col>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
-        <!-- Img grid end -->
         <!-- content begin here-->
+        <p>
+          2 personas have been created to show how users will navigate and use
+          the application.
+        </p>
+        <div>
+          <ion-item button onclick="ToggleList(document.getElementById('p1'))">
+            <ion-label>Adding new Item</ion-label>
+            <ion-icon id="i1" slot="end" name="chevron-down-outline"></ion-icon>
+          </ion-item>
+          <div id="p1" style="display: none">
+            <ion-item
+              ><br />
+              <ion-item class="ion-no-padding">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="4">
+                      <br />
+                      <img
+                        src="images/personaMan.png"
+                        style="
+                          width: 100%;
+                          max-width: 150px;
+                          justify-content: center;
+                        "
+                      />
+                    </ion-col>
+                    <ion-col>
+                      <p><b>Henry Jones</b></p>
+                      <ul>
+                        <li>78 years old</li>
+                        <li>Lives alone</li>
+                        <li>Has light dementia</li>
+                      </ul>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid> </ion-item
+              ><br /> </ion-item
+            ><br />
+          </div>
+        </div>
 
+        <div>
+          <ion-item button onclick="ToggleList(document.getElementById('p2'))">
+            <ion-label>Find item</ion-label
+            ><ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+          </ion-item>
+
+          <div id="p2" style="display: none; transition: 0.5s">
+            <ion-item
+              ><br />
+              persona 2 persona 2 persona 2 persona 2 persona 2 persona 2
+              persona 2 persona 2 persona 2
+            </ion-item>
+          </div>
+        </div>
         <!-- content end here-->
       </ion-content>
       <!-- Floating button-->
@@ -134,4 +164,3 @@
     </ion-app>
   </body>
 </html>
-<script></script>
