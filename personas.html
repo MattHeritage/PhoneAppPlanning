@@ -100,7 +100,7 @@
         <!-- content begin here-->
         <p>
           2 personas have been created to show how users will navigate and use
-          the application.
+          the application...
         </p>
         <div>
           <ion-item button onclick="ToggleList(document.getElementById('p1'))">
@@ -133,8 +133,21 @@
                       </ul>
                     </ion-col>
                   </ion-row>
-                </ion-grid> </ion-item
-              ><br /> </ion-item
+                  <ion-row>
+                    <p>
+                      Henry wants to remember where he placed his newspaper, so
+                      he opens the app presses the floating button in the bottom
+                      left corner with the ‘+’ symbol on to create a new item.
+                      This will then open the ‘new item model’ he will then be
+                      prompted to enter the information for the item, such as
+                      the name, a photo, reminder date, and the location (This
+                      can be selected from a map)
+                    </p>
+                  </ion-row>
+                </ion-grid>
+              </ion-item>
+
+              <br /> </ion-item
             ><br />
           </div>
         </div>
@@ -148,8 +161,48 @@
           <div id="p2" style="display: none; transition: 0.5s">
             <ion-item
               ><br />
-              persona 2 persona 2 persona 2 persona 2 persona 2 persona 2
-              persona 2 persona 2 persona 2
+              <ion-item class="ion-no-padding">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="4">
+                      <br />
+                      <img
+                        src="images/personaWoman.png"
+                        style="
+                          width: 100%;
+                          max-width: 150px;
+                          justify-content: center;
+                        "
+                      />
+                    </ion-col>
+                    <ion-col>
+                      <p><b>Alice Madsen</b></p>
+                      <ul>
+                        <li>32 years old</li>
+                        <li>Collector</li>
+                      </ul>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <p>
+                      Alice has moved some of her collection to a warehouse and
+                      wants to update this in the app so she can keep track. She
+                      opens the app and selects the ‘Items’ tab, this then
+                      displays the list of her items, she uses the search button
+                      on the toolbar at the top of the screen to find the items
+                      easier. When she originally made the items, she added the
+                      same tag to all of them, this allows her to just search
+                      the tag name to load the items she wants. She can then
+                      press and hold on one of the items to perform a
+                      multiselect to modify a group of items at once, she then
+                      presses edit and changes the location to the warehouse
+                      using the map. She follows the same steps and modifies
+                      other items that she has not yet moved to the warehouse to
+                      send her a reminder when she can move more items there.
+                    </p></ion-row
+                  >
+                </ion-grid>
+              </ion-item>
             </ion-item>
           </div>
         </div>
