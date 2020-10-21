@@ -99,170 +99,183 @@
       <ion-content class="ion-padding">
         <p>
           To help get a better understanding of what the app should include, 2
-          compariosions have been made with other simular apps...
+          comparisons have been made with other similar apps...
         </p>
         <br />
-        <ion-grid
-          ><ion-row
-            ><ion-col size="4"
-              ><img src="images/Sortly_Logo.png" /></ion-col></ion-row
-        ></ion-grid>
+        <!-- Dropdown box-->
+        <ion-item button onclick="ToggleList(document.getElementById('p1'))">
+          <ion-label>Sortly</ion-label
+          ><ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+        </ion-item>
+        <div id="p1" style="display: none; transition: 0.5s">
+          <ion-grid
+            ><ion-row
+              ><ion-col size="4"
+                ><img src="images/Sortly_Logo.png" /></ion-col></ion-row
+          ></ion-grid>
 
-        <p>
-          The first app to look at is '<a
-            href="https://play.google.com/store/apps/details?id=com.sortly.mythings"
-            >Sortly</a
-          >' by 'Sortly Inc.' It's an inventory system aimed at businesses to
-          help track of the stock they have to sell.
-        </p>
-        <!-- Img grid -->
-        <ion-item class="ion-no-padding">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="4">
-                <br />
-                <img
-                  src="images/SortlyImg.JPG"
-                  alt="Sortly on Android"
-                  style="width: 100%; max-width: 150px; justify-content: center"
-                  onclick="getModalElems(this)"
-                />
-                <p style="font-size: 12px; color: rgb(87, 87, 87)">
-                  Press to enlarge
-                </p>
-              </ion-col>
-              <ion-col>
-                <p>
-                  This image of Sortly shows the create item screen. The design
-                  of the page looks very nice with everything clearly laid out
-                  this app doesn't allow users to save a location or set
-                  reminders for items.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
-        <!-- Img grid end -->
-        <!-- Img grid -->
-        <ion-item class="ion-no-padding">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="4">
-                <br />
-                <img
-                  src="images/SortlyImg2.JPG"
-                  alt="Sortly on Android"
-                  style="width: 100%; max-width: 150px; justify-content: center"
-                  onclick="getModalElems(this)"
-                />
-                <p style="font-size: 12px; color: rgb(87, 87, 87)">
-                  Press to enlarge
-                </p>
-              </ion-col>
-              <ion-col>
-                <p>
-                  This image displays the Sortly items page. Sortly can list
-                  items in a grid view (Shown in image) and in a list view.
-                  Having this option is good because it means its easier to find
-                  items.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
+          <p>
+            The first app to look at is '<a
+              href="https://play.google.com/store/apps/details?id=com.sortly.mythings"
+              >Sortly</a
+            >' by 'Sortly Inc.' It's an inventory system aimed at businesses to
+            help track of the stock they have to sell.
+          </p>
+          <!-- Img grid -->
+          <ion-item class="ion-no-padding">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="4">
+                  <br />
+                  <img
+                    src="images/SortlyImg.JPG"
+                    alt="Sortly on Android"
+                    style="
+                      width: 100%;
+                      max-width: 150px;
+                      justify-content: center;
+                    "
+                    onclick="getModalElems(this)"
+                  />
+                  <p style="font-size: 12px; color: rgb(87, 87, 87)">
+                    Press to enlarge
+                  </p>
+                </ion-col>
+                <ion-col>
+                  <p>
+                    This image of Sortly shows the create item screen. The
+                    design of the page looks very nice with everything clearly
+                    laid out this app doesn't allow users to save a location or
+                    set reminders for items.
+                  </p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <!-- Img grid end -->
+          <!-- Img grid -->
+          <ion-item class="ion-no-padding">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="4">
+                  <br />
+                  <img
+                    src="images/SortlyImg2.JPG"
+                    alt="Sortly on Android"
+                    style="
+                      width: 100%;
+                      max-width: 150px;
+                      justify-content: center;
+                    "
+                    onclick="getModalElems(this)"
+                  />
+                  <p style="font-size: 12px; color: rgb(87, 87, 87)">
+                    Press to enlarge
+                  </p>
+                </ion-col>
+                <ion-col>
+                  <p>
+                    This image displays the Sortly items page. Sortly can list
+                    items in a grid view (Shown in image) and in a list view.
+                    Having this option is good because it means its easier to
+                    find items.
+                  </p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </div>
         <!-- Img grid end -->
         <!-- content begin here-->
-        <p>
-          While both of these applications seem excellent, they are both aimed
-          at use for companies to maintain their sock values. 'Save it: Item
-          Finder' will be primarily developed for the casual user who just needs
-          to keep track of their possessions.
-        </p>
-        <br /><br />
+
         <!-- content end here-->
 
-        <ion-grid
-          ><ion-row
-            ><ion-col size="4"
-              ><img src="images/Sortly_Logo.png" /></ion-col></ion-row
-        ></ion-grid>
+        <!-- Dropdown box-->
+        <ion-item button onclick="ToggleList(document.getElementById('p2'))">
+          <ion-label>Magic Home Inventory</ion-label
+          ><ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+        </ion-item>
+        <div id="p2" style="display: none; transition: 0.5s">
+          <ion-grid
+            ><ion-row
+              ><ion-col size="4"
+                ><img
+                  src="images/MagicHomeInventory_Logo.JPG" /></ion-col></ion-row
+          ></ion-grid>
 
-        <p>
-          The first app to look at is '<a
-            href="https://play.google.com/store/apps/details?id=com.sortly.mythings"
-            >Sortly</a
-          >' by 'Sortly Inc.' It's an inventory system aimed at businesses to
-          help track of the stock they have to sell.
-        </p>
-        <!-- Img grid -->
-        <ion-item class="ion-no-padding">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="4">
-                <br />
-                <img
-                  src="images/SortlyImg.JPG"
-                  alt="Sortly on Android"
-                  style="width: 100%; max-width: 150px; justify-content: center"
-                  onclick="getModalElems(this)"
-                />
-                <p style="font-size: 12px; color: rgb(87, 87, 87)">
-                  Press to enlarge
-                </p>
-              </ion-col>
-              <ion-col>
-                <p>
-                  This image of Sortly shows the create item screen. The design
-                  of the page looks very nice with everything clearly laid out
-                  this app doesn't allow users to save a location or set
-                  reminders for items.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
-        <!-- Img grid end -->
-        <!-- Img grid -->
-        <ion-item class="ion-no-padding">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="4">
-                <br />
-                <img
-                  src="images/SortlyImg2.JPG"
-                  alt="Sortly on Android"
-                  style="width: 100%; max-width: 150px; justify-content: center"
-                  onclick="getModalElems(this)"
-                />
-                <p style="font-size: 12px; color: rgb(87, 87, 87)">
-                  Press to enlarge
-                </p>
-              </ion-col>
-              <ion-col>
-                <p>
-                  This image displays the Sortly items page. Sortly can list
-                  items in a grid view (Shown in image) and in a list view.
-                  Having this option is good because it means its easier to find
-                  items.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
+          <p>
+            The second app to look at is '<a
+              href="https://play.google.com/store/apps/details?id=net.twisterrob.inventory"
+              >Magic Home Inventory</a
+            >' by 'Róbert Papp (TWiStErRob)' It's an inventory managment system.
+          </p>
+          <!-- Img grid -->
+          <ion-item class="ion-no-padding">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="4">
+                  <br />
+                  <img
+                    src="images/MHIImg.JPG"
+                    alt="Magic Home Inventory on Android"
+                    style="
+                      width: 100%;
+                      max-width: 150px;
+                      justify-content: center;
+                    "
+                    onclick="getModalElems(this)"
+                  />
+                  <p style="font-size: 12px; color: rgb(87, 87, 87)">
+                    Press to enlarge
+                  </p>
+                </ion-col>
+                <ion-col>
+                  <p>Image desc</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <!-- Img grid end -->
+          <!-- Img grid -->
+
+          <ion-item class="ion-no-padding">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="4">
+                  <br />
+                  <img
+                    src="images/MHIImg2.JPG"
+                    alt="Magic Home Inventory on Android"
+                    style="
+                      width: 100%;
+                      max-width: 150px;
+                      justify-content: center;
+                    "
+                    onclick="getModalElems(this)"
+                  />
+                  <p style="font-size: 12px; color: rgb(87, 87, 87)">
+                    Press to enlarge
+                  </p>
+                </ion-col>
+                <ion-col>
+                  <p>Image desc</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </div>
         <!-- Img grid end -->
         <!-- content begin here-->
-        <p>
-          While both of these applications seem excellent, they are both aimed
-          at use for companies to maintain their sock values. 'Save it: Item
-          Finder' will be primarily developed for the casual user who just needs
-          to keep track of their possessions.
-        </p>
+        <br />
+        <h3>Conclusion</h3>
+        <p>Conclusion here</p>
         <br /><br />
+
         <!-- content end here-->
       </ion-content>
       <!-- Floating button-->
       <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button href="#">
+        <ion-fab-button href="frameworks.html">
           <ion-icon name="chevron-forward-outline"></ion-icon>
         </ion-fab-button>
       </ion-fab>
