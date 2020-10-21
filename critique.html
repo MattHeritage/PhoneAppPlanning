@@ -96,8 +96,15 @@
 
         <!-- screen begin here -->
       </ion-header>
-      <ion-content class="ion-padding">
-        <p>
+      <ion-content
+        class="ion-padding"
+        style="scroll-behavior: smooth"
+        has-bouncing="true"
+        class="has-header"
+        overflow-scroll="false"
+        has
+      >
+        <p id="top">
           To help get a better understanding of what the app should include, 2
           comparisons have been made with other similar apps...
         </p>
@@ -189,7 +196,6 @@
         <!-- content begin here-->
 
         <!-- content end here-->
-
         <!-- Dropdown box-->
         <ion-item button onclick="ToggleList(document.getElementById('p2'))">
           <ion-label>Magic Home Inventory</ion-label
@@ -230,7 +236,12 @@
                   </p>
                 </ion-col>
                 <ion-col>
-                  <p>Image desc</p>
+                  <p>
+                    This image shows a dashboard of sort and it seems very
+                    useful to be able to keep all the items organised. Although
+                    the UI feels slightly outdated and the colours seem quite
+                    dull.
+                  </p>
                 </ion-col>
               </ion-row>
             </ion-grid>
@@ -258,7 +269,12 @@
                   </p>
                 </ion-col>
                 <ion-col>
-                  <p>Image desc</p>
+                  <p>
+                    This is an image of a group in the app. Magic Home allows
+                    users to set a image for groups (Shown in image) this could
+                    be really useful to help users identify sets of items for
+                    example the group image could be of the room itself.
+                  </p>
                 </ion-col>
               </ion-row>
             </ion-grid>
@@ -273,6 +289,17 @@
 
         <!-- content end here-->
       </ion-content>
+      <!-- Return to top-->
+      <ion-fab
+        vertical="bottom"
+        horizontal="start"
+        slot="fixed"
+        id="rtt"
+        style="display: none"
+      >
+        <ion-fab-button color="tertiary" onclick="ScrollToTop()">
+          <ion-icon name="chevron-up-outline"></ion-icon> </ion-fab-button
+      ></ion-fab>
       <!-- Floating button-->
       <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button href="frameworks.html">
@@ -282,4 +309,20 @@
     </ion-app>
   </body>
 </html>
-<script></script>
+<script>
+  //Scroll event for "return to top" button
+  var content = document.querySelector('ion-content');
+  content.scrollEvents = true;
+  content.addEventListener('ionScroll', (ev) => {
+    var rttBtn = document.getElementById('rtt');
+    if (ev.detail.scrollTop >= 850) {
+      rttBtn.style.display = 'block';
+    } else {
+      rttBtn.style.display = 'none';
+    }
+  });
+  function ScrollToTop() {
+    var elm = document.getElementById('top');
+    elm.scrollIntoView({ block: 'end', behavior: 'smooth' });
+  }
+</script>

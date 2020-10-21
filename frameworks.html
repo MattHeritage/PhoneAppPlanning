@@ -97,7 +97,7 @@
         <!-- screen begin here -->
       </ion-header>
       <ion-content class="ion-padding">
-        <p>
+        <p id="top">
           To develop this project a list of technologies will be used, they have
           been listed below...
         </p>
@@ -222,10 +222,24 @@
           to best use them. <br /><br />Other than that with other technologies
           like Angular, Ionic, SASS I have none or very little prior experience,
           so I'm going need to spend time to learn them and become proficient
-          with them.
+          with them.<br /><br />
+          This planning app has been created with the Ionic CDN to help me get a
+          better understanding of how to use the components.
         </p>
-        <br />
-        <!-- Floating button-->
+        <br /><br />
+        <!-- Floating buttons-->
+        <!-- Return to top-->
+        <ion-fab
+          vertical="bottom"
+          horizontal="start"
+          slot="fixed"
+          id="rtt"
+          style="display: none"
+        >
+          <ion-fab-button color="tertiary" onclick="ScrollToTop()">
+            <ion-icon name="chevron-up-outline"></ion-icon> </ion-fab-button
+        ></ion-fab>
+        <!--Go to home-->
         <ion-fab vertical="bottom" horizontal="end" slot="fixed">
           <ion-fab-button href="index.html">
             <ion-icon name="home-outline"></ion-icon> </ion-fab-button
@@ -234,4 +248,20 @@
     </ion-app>
   </body>
 </html>
-<script></script>
+<script>
+  //Scroll event for "return to top" button
+  var content = document.querySelector('ion-content');
+  content.scrollEvents = true;
+  content.addEventListener('ionScroll', (ev) => {
+    var rttBtn = document.getElementById('rtt');
+    if (ev.detail.scrollTop >= 750) {
+      rttBtn.style.display = 'block';
+    } else {
+      rttBtn.style.display = 'none';
+    }
+  });
+  function ScrollToTop() {
+    var elm = document.getElementById('top');
+    elm.scrollIntoView({ block: 'end', behavior: 'smooth' });
+  }
+</script>
