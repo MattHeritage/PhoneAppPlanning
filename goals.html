@@ -97,33 +97,58 @@
         <!-- screen begin here -->
       </ion-header>
       <ion-content class="ion-padding">
-        <!-- Img grid -->
-        <ion-item class="ion-no-padding">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="4">
-                <br />
-                <img
-                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
-                  alt="Tree at sunset"
-                  style="width: 100%; max-width: 150px; justify-content: center"
-                  onclick="getModalElems(this)"
-                />
-              </ion-col>
-              <ion-col>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
-        <!-- Img grid end -->
         <!-- content begin here-->
-
+        <h3 id="top">What it is</h3>
+        <p>
+          This is a design for a app called "Save it:Item finder" that will be
+          implemented soon, it’s an app that’s focused around keeping track of
+          where items are placed. This will prove especially useful for items
+          that are not needed that often such as batteries, for people who have
+          bad memory, or people who have a lot of things.
+        </p>
+        <br />
+        <h3>Included features</h3>
+        <p>
+          Below, the main features of the application have been listed below...
+        </p>
+        <ul>
+          <li>
+            Able to create new items that are then saved this will contain
+            features such as...
+            <ul>
+              <li>Name</li>
+              <li>Set photo (Camera or gallery selection)</li>
+              <li>Tags</li>
+              <li>Description</li>
+              <li>Location from map</li>
+              <li>Push notification reminder</li>
+            </ul>
+          </li>
+          <li>Existing items can be edited and deleted</li>
+          <li>
+            Able to decide what items show where on the dashboard, to display
+            certain tags or items
+          </li>
+          <li>Can create push notification reminders on certain dates</li>
+          <li>Able to search all items by name, or tags</li>
+          <li>Can create custom groups</li>
+          <li>Able to backup items to a server</li>
+        </ul>
         <!-- content end here-->
+        <br />
+        <br />
       </ion-content>
+      <!-- Return to top-->
+      <ion-fab
+        vertical="bottom"
+        horizontal="start"
+        slot="fixed"
+        id="rtt"
+        style="display: none"
+      >
+        <ion-fab-button color="tertiary" onclick="ScrollToTop()">
+          <ion-icon name="chevron-up-outline"></ion-icon> </ion-fab-button
+      ></ion-fab>
       <!-- Floating button-->
       <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button href="personas.html">
@@ -133,4 +158,27 @@
     </ion-app>
   </body>
 </html>
-<script></script>
+
+<script>
+  //Scroll event for "return to top" button
+  var content = document.querySelector('ion-content');
+  content.scrollEvents = true;
+  content.addEventListener('ionScroll', (ev) => {
+    var rttBtn = document.getElementById('rtt');
+    if (ev.detail.scrollTop >= 150) {
+      rttBtn.style.display = 'block';
+    } else {
+      rttBtn.style.display = 'none';
+    }
+  });
+  function ScrollToTop() {
+    var elm = document.getElementById('top');
+    elm.scrollIntoView({ block: 'end', behavior: 'smooth' });
+  }
+</script>
+
+<style>
+  li {
+    margin: 0 0 3px 0;
+  }
+</style>

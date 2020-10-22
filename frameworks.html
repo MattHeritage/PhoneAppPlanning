@@ -101,8 +101,9 @@
           To develop this project a list of technologies will be used, they have
           been listed below...
         </p>
+
         <br /><br />
-        <b style="font-size: 22px">Main Technologies</b>
+        <b style="font-size: 22px" id="mt">Main Technologies</b>
         <!-- Img grid -->
         <ion-item class="ion-no-padding">
           <ion-grid>
@@ -190,7 +191,7 @@
           </ion-grid>
         </ion-item>
         <!-- Img grid end -->
-        <b style="font-size: 22px">Other Technologies</b>
+        <b style="font-size: 22px" id="ot">Other Technologies</b>
         <ion-item>
           <ion-grid>
             <ion-row>
@@ -215,7 +216,7 @@
         </ion-item>
         <!-- content begin here-->
 
-        <b style="font-size: 22px">Personal experience</b>
+        <b style="font-size: 22px" id="pe">Personal experience</b>
         <p>
           I have used the basic web technologies HTML, CSS, and JavaScript quite
           extensively so I have a decent understanding of how they work and how
@@ -261,6 +262,7 @@
     }
   });
   function ScrollToTop() {
+    //Pass id
     var elm = document.getElementById('top');
     elm.scrollIntoView({ block: 'end', behavior: 'smooth' });
   }
