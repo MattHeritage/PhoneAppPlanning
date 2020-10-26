@@ -135,15 +135,38 @@
                     </ion-col>
                   </ion-row>
                   <ion-row>
+                    <ol>
+                      <li>Open the app and select 'Items'.</li>
+                      <li>Press the floating button with '+' on.</li>
+                      <li>Enter the required information.</li>
+                      <li>Press save.</li>
+                    </ol>
+                  </ion-row>
+                  <ion-row>
                     <p>
-                      Henry wants to remember where he placed his newspaper, so
-                      he opens the app presses the floating button in the bottom
-                      left corner with the ‘+’ symbol on to create a new item.
-                      This will then open the ‘new item model’ he will then be
-                      prompted to enter the information for the item, such as
-                      the name, a photo, reminder date, and the location (This
-                      can be selected from a map)
+                      Later Henry wants to create a tag for the dining room to
+                      keep track of all the items there
                     </p>
+                    <ol>
+                      <li>Open the app and select 'Items'.</li>
+                      <li>Select the item or items.</li>
+                      <li>Press edit.</li>
+                      <li>Press in 'Tags'.</li>
+                      <li>Select create new tag.</li>
+                      <li>Enter tag name and save.</li>
+                      <li>Apply tag to item and save.</li>
+                    </ol>
+                  </ion-row>
+                  <ion-row>
+                    <p>Henry wants to put the tag on the dashboard.</p>
+                    <ol>
+                      <li>
+                        Open the app and press and hold on the 'tags' section.
+                      </li>
+                      <li>Select add tag group.</li>
+                      <li>Select the tag from the list.</li>
+                      <li>Return to dashboard to see tag displayed.</li>
+                    </ol>
                   </ion-row>
                 </ion-grid>
               </ion-item>
@@ -185,23 +208,19 @@
                     </ion-col>
                   </ion-row>
                   <ion-row>
-                    <p>
-                      Alice has moved some of her collection to a warehouse and
-                      wants to update this in the app so she can keep track. She
-                      opens the app and selects the ‘Items’ tab, this then
-                      displays the list of her items, she uses the search button
-                      on the toolbar at the top of the screen to find the items
-                      easier. When she originally made the items, she added the
-                      same tag to all of them, this allows her to just search
-                      the tag name to load the items she wants. She can then
-                      press and hold on one of the items to perform a
-                      multiselect to modify a group of items at once, she then
-                      presses edit and changes the location to the warehouse
-                      using the map. She follows the same steps and modifies
-                      other items that she has not yet moved to the warehouse to
-                      send her a reminder when she can move more items there.
-                    </p></ion-row
-                  >
+                    Alice has moved some of her collection to a warehouse and
+                    wants to update this in the app.
+                    <ol>
+                      <li>Open the app and select the ‘Items’ tab.</li>
+                      <li>Use the search button to find items easier.</li>
+                      <li>Search the item name or tag.</li>
+                      <li>Press and hold to multiselect items and edit.</li>
+                      <li>
+                        Change the location using the map and set a reminder on
+                        date.
+                      </li>
+                    </ol>
+                  </ion-row>
                 </ion-grid>
               </ion-item>
             </ion-item>
@@ -247,3 +266,8 @@
     elm.scrollIntoView({ block: 'end', behavior: 'smooth' });
   }
 </script>
+<style>
+  li {
+    margin: 10px 0;
+  }
+</style>
